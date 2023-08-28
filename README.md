@@ -1,2 +1,4 @@
 # andika_zettacamp_Dolphin
- Repository ini berisi daily task dan logic test selama mengikuti zettacamp
+ Branch ini berisi task day 5 dan logic test mengenai javascript
+
+ Hari ini mempelajari mengenai array function
