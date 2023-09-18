@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+}
+
+.box {
+    background-color: rgb(201, 16, 214);
+    text-align: center;
+    color: aliceblue;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.container {
+    margin-bottom: 10px;
+}
