@@ -1,0 +1,66 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav {
+    padding: 20px;
+    background-color: #007BFF;
+    color: #fff; 
+    margin-bottom: 20px;;
+  }
+  
+ 
+  .nav h1 {
+    font-size: 24px;
+  }
+
+  table {
+    width: 1200px;
+    border-collapse: collapse;
+    margin-left: 150px;
+    margin-top: 20px;
+  }
+  
+  /* CSS untuk header tabel */
+  th {
+    background-color: #007BFF; /* Warna latar belakang header */
+    color: #fff; /* Warna teks header */
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd; /* Warna dan gaya border header */
+    text-align: center;
+  }
+  
+  /* CSS untuk sel data dalam tabel */
+  td {
+    padding: 10px;
+    border: 1px solid #ddd; /* Warna dan gaya border sel data */
+    text-align: center;
+  }
+
+  /* CSS untuk tombol */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007BFF; /* Warna latar belakang */
+  color: #fff; /* Warna teks */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.button:hover {
+  background-color: #0056b3; /* Warna latar belakang saat hover */
+}
+
+.button:disabled {
+  background-color: #76b4f6;
+  cursor: not-allowed;
+}
+
+  

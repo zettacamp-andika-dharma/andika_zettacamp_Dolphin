@@ -1,0 +1,68 @@
+/* CSS All margin */
+* {
+    margin-left: 75px;
+}
+
+/* CSS untuk elemen input */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 1170px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc; /* Warna border */
+  border-radius: 5px;
+}
+
+/* Efek hover pada input */
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover {
+  border-color: #007BFF; /* Warna border saat hover */
+}
+
+/* Efek focus pada input */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none; /* Hilangkan outline bawaan browser */
+  border-color: #007BFF; /* Warna border saat focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Shadow saat focus */
+}
+
+/* CSS untuk tombol submit */
+input[type="submit"] {
+  background-color: #007BFF; /* Warna latar belakang tombol submit */
+  color: #fff; /* Warna teks tombol submit */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3; /* Warna latar belakang tombol submit saat hover */
+}
+
+/* CSS untuk tombol */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007BFF; /* Warna latar belakang */
+  color: #fff; /* Warna teks */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #0056b3; /* Warna latar belakang saat hover */
+}
+
+.button:disabled {
+  background-color: #76b4f6;
+  cursor: not-allowed;
+}
