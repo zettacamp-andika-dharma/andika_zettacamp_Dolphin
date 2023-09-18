@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="card" *ngFor="let item of deckList">
+    <img [attr.src]="item.image" alt="" class="image" />
+    <h4 class="card-title">{{ item.title }}</h4>
+    <p class="card-description">
+      {{ item.desc }}
+    </p>
+    <div class="btn">
+      <button class="button" [disabled]="!allowNewItem" (click)="onItemAdd()">
+        Add item
+      </button>
+    </div>
+  </div>
+</div>
+
+<h2 [ngStyle]="{ color: getColor() }">{{ itemStatus }}</h2>
+<h2 [style.color]="getColor()">{{ itemStatus }}</h2>
