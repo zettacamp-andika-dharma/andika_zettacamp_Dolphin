@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="card" *ngFor="let book of listBook">
+    <img src="{{ book.img }}" alt="Card Image" />
+    <div class="card-content">
+      <h2>{{ book.title }}</h2>
+      <p>{{ book.author }}</p>
+      <button (click)="updateBookById(book)">Book Detail</button>
+    </div>
+  </div>
+</div>
