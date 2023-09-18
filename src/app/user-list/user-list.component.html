@@ -1,0 +1,16 @@
+<link
+  href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+  rel="stylesheet"
+/>
+<div class="nav">
+  <h1>User list</h1>
+</div>
+<app-forms (userCreated)="onUserAdded($event)"></app-forms>
+<div *ngIf="tableData[0]; then showTable; else deleteTable"></div>
+<ng-template #showTable>
+  <app-tables
+    [userListData]="tableData"
+    (listDataTable)="removeTable()"
+  ></app-tables>
+</ng-template>
+<ng-template #deleteTable></ng-template>

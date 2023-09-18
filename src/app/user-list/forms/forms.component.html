@@ -1,0 +1,78 @@
+<form>
+  <label for="name">Full Name:</label><br />
+  <!-- <input
+    type="text"
+    id="name"
+    name="name"
+    placeholder="Input User Name"
+    [(ngModel)]="newUserName"
+  /><br /> -->
+  <input
+    type="text"
+    id="name"
+    name="name"
+    placeholder="Input User Name"
+    #userNameInput
+  /><br />
+
+  <label for="email">Email:</label><br />
+  <!-- <input
+    type="email"
+    id="email"
+    name="email"
+    placeholder="Input User Email"
+    [(ngModel)]="newUserEmail"
+  /><br /> -->
+  <input
+    type="email"
+    id="email"
+    name="email"
+    placeholder="Input User Email"
+    #userEmailInput
+  /><br />
+
+  <label for="city">Kota:</label><br />
+  <!-- <input
+    type="text"
+    id="city"
+    name="city"
+    placeholder="Input User City"
+    [(ngModel)]="newUserCity"
+  /><br /> -->
+  <input
+    type="text"
+    id="city"
+    name="city"
+    placeholder="Input User City"
+    #userCityInput
+  /><br />
+
+  <label for="password">Password:</label><br />
+  <!-- <input
+    type="password"
+    id="password"
+    name="password"
+    placeholder="Input User Password"
+    [(ngModel)]="newUserPassword"
+  /><br /> -->
+  <input
+    type="password"
+    id="password"
+    name="password"
+    placeholder="Input User Password"
+    #userPasswordInput
+  /><br />
+
+  <button
+    (click)="onAddUser(userNameInput)"
+    class="button"
+    [disabled]="!userNameInput"
+  >
+    Add user
+  </button>
+</form>
+
+<!-- class="button"
+[disabled]="
+  !newUserName || !newUserEmail || !newUserCity || !newUserPassword
+" -->
