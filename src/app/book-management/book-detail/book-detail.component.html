@@ -1,0 +1,17 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Book Details</h5>
+    <ng-container *ngIf="selectedBook">
+      <p class="card-text">Name: {{ selectedBook.name }}</p>
+      <p class="card-text">Author: {{ selectedBook.author }}</p>
+      <p class="card-text">Publisher: {{ selectedBook.publisher }}</p>
+      <p class="card-text">Publish Date: {{ selectedBook.publishDate }}</p>
+    </ng-container>
+    <ng-container *ngIf="!selectedBook">
+      <p>
+        You don't have any selected book yet. Please select from the list of
+        books available.
+      </p>
+    </ng-container>
+  </div>
+</div>
