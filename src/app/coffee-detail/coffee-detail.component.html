@@ -1,0 +1,25 @@
+<h2>Coffee Detail</h2>
+<div class="container">
+  <div class="card">
+    <div class="card-content" *ngIf="coffeeDetail">
+      <h3 class="card-title">{{ coffeeDetail.name }}</h3>
+      <img
+        [src]="coffeeDetail.imageUrl"
+        alt="CoffeeDetail Image"
+        class="card-image"
+      />
+      <p class="card-description">{{ coffeeDetail.description }}</p>
+      <p class="card-origin">Origin: {{ coffeeDetail.origin }}</p>
+      <p class="card-roast">Roast Level: {{ coffeeDetail.roastLevel }}</p>
+      <p class="card-price">Price: Rp{{ coffeeDetail.price }}</p>
+      <p class="card-rating">Rating: {{ coffeeDetail.rating }}</p>
+    </div>
+    <div *ngIf="!coffeeDetail">
+      <p>
+        You don't have any selected coffee yet. Please select from the list of
+        coffees available.
+      </p>
+    </div>
+  </div>
+</div>
+<button class="button" (click)="backToList()">Go to list</button>

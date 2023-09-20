@@ -1,0 +1,78 @@
+<div class="form-container">
+  <form>
+    <h1>Form Input New Coffee</h1>
+    <label for="name">Coffee Name:</label><br />
+    <input
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Input Coffee Name"
+      [(ngModel)]="newCoffee.name"
+      required
+    /><br />
+
+    <label for="description">Coffee Description:</label><br />
+    <input
+      type="text"
+      id="description"
+      name="description"
+      placeholder="Input Description"
+      [(ngModel)]="newCoffee.description"
+      required
+    /><br />
+
+    <label for="origin">Coffee Origin:</label><br />
+    <input
+      type="text"
+      id="origin"
+      name="origin"
+      placeholder="Input Coffee Origin"
+      [(ngModel)]="newCoffee.origin"
+      required
+    /><br />
+
+    <label for="roastLevel">Coffee Roast Level:</label><br />
+    <input
+      type="text"
+      id="roastLevel"
+      name="roastLevel"
+      placeholder="Input Coffee Roast Level"
+      [(ngModel)]="newCoffee.roastLevel"
+      required
+    /><br />
+
+    <label for="price">Coffee Price:</label><br />
+    <input
+      type="number"
+      id="price"
+      name="price"
+      placeholder="Input Coffee Price"
+      [(ngModel)]="newCoffee.price"
+      required
+    /><br />
+
+    <label for="rating">Coffee Rating:</label><br />
+    <input
+      type="number"
+      id="rating"
+      name="rating"
+      placeholder="Input Coffee Rating"
+      [(ngModel)]="newCoffee.rating"
+      required
+    /><br />
+
+    <label for="imageUrl">Image URL:</label><br />
+    <input
+      type="url"
+      id="imageUrl"
+      name="imageUrl"
+      placeholder="Input Coffee Image URL"
+      [(ngModel)]="newCoffee.imageUrl"
+      required
+    /><br />
+
+    <button type="button" class="button" (click)="onAddCoffee()">
+      Add Coffee
+    </button>
+  </form>
+</div>

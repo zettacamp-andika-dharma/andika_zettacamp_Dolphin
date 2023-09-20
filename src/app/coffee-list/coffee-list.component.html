@@ -1,0 +1,12 @@
+<h2>List of coffee</h2>
+<div class="container">
+  <div class="card" *ngFor="let coffee of coffees; let coffeeIndex = index">
+    <img [src]="coffee.imageUrl" alt="Coffee Image" class="card-image" />
+    <div class="card-content">
+      <h3 class="card-title">{{ coffee.name }}</h3>
+      <p class="card-price">Rp{{ coffee.price }}</p>
+      <p class="card-rating">Rating: {{ coffee.rating }}</p>
+      <button class="button" (click)="selectCoffee(coffeeIndex)">Detail</button>
+    </div>
+  </div>
+</div>

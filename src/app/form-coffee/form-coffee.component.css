@@ -1,0 +1,67 @@
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc; /* Warna border */
+  border-radius: 5px;
+  background-color: #F2ECBE;
+}
+
+/* Efek hover pada input */
+input[type="text"]:hover,
+input[type="url"]:hover,
+input[type="number"]:hover {
+  border-color: #884A39;
+}
+
+input[type="text"]:focus,
+input[type="url"]:focus,
+input[type="number"]:focus {
+  outline: none;
+  border-color: #884A39; 
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+
+
+input[type="submit"] {
+  background-color: #007BFF;
+  color: #fff; 
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #884A39; /* Warna latar belakang */
+  color: #fff; /* Warna teks */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #633a2f; /* Warna latar belakang saat hover */
+}
+
+.button:disabled {
+  background-color: #cd7e68;
+  cursor: not-allowed;
+}

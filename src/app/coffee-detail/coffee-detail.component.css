@@ -1,0 +1,66 @@
+h2 {
+    margin-left: 40px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .card-description {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  
+  .card-origin,
+  .card-roast,
+  .card-price,
+  .card-rating {
+    font-size: 12px;
+    margin: 5px 0;
+  }
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #884A39; /* Warna latar belakang */
+    color: #fff; /* Warna teks */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+  
+  .button:hover {
+    background-color: #633a2f; /* Warna latar belakang saat hover */
+  }
+  
+  .button:disabled {
+    background-color: #cd7e68;
+    cursor: not-allowed;
+  }
